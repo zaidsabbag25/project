@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="asseets/font/fontawesome-free-6.6.0-web/css/all.css">
+    <link rel="stylesheet" href="asseets/css/shop.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="asseets/css/sign.css">
+    <link rel="stylesheet" href="asseets/css/home.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container my-container">
+            <!-- زر التبديل للجوال -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Offcanvas للتنقل في الجوال -->
+            <div class="offcanvas offcanvas-start myoffcanvas" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title navbar-brand" id="offcanvasNavbarLabel">3legant.</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <!-- شريط البحث -->
+                    <form class="d-flex mt-3 position-relative" role="search">
+                        <input class="form-control form-search me-2" type="search" placeholder="Search" aria-label="Search">
+                        <i class="fa-solid fa-magnifying-glass fa-2xl icon-sea" style="color: #000000;"></i>
+                    </form>
+                    
+                    <!-- روابط التنقل -->
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item"><a class="nav-link li-res " href="home-bage.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link li-res " href="shop-page.html">Shop</a></li>      
+                        <li class="nav-item"><a class="nav-link li-res" href="product.html">Product</a></li>
+                        <li class="nav-item"><a class="nav-link li-res" href="contact-us.html">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link li-res active" href="blog.html">Blog</a></li>
+                    </ul>
+                    
+                    <!-- السلة وقائمة الأماني -->
+                    <div class="d-flex cart-res">
+                        <a href="#">Cart</a>
+                        <button class="btn position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle cart">
+                            <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #000000;"></i>
+                        </button>
+                    </div>
+                    <div class="d-flex love-res">
+                        <a href="#">My Account</a>
+                        <a href="my-acount.html"><i class="fa-regular fa-user fa-2xl" style="color: #000000;"></i></a>
+                    </div>
+                    
+                    <!-- زر تسجيل الدخول -->
+                    <button class="log-in mb-5" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">Sign In</button>
+                    
+                    <!-- أيقونات وسائل التواصل الاجتماعي -->
+                    <div class="social-icon-footer d-flex">
+                        <a href="#"><i class="fa-brands fa-instagram fa-2xl" style="color: #141718;"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook fa-2xl" style="color: #141718;"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube fa-2xl" style="color: #141718;"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- شعار الموقع -->
+            <a class="navbar-brand" href="#">3legant.</a>
+            
+            <!-- روابط التنقل لأجهزة الكمبيوتر -->
+            <div class="collapse navbar-collapse my-nav" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link " href="home-bage.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop-page.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Product</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                </ul>
+                
+                <!-- أيقونات البحث والحساب -->
+                <div class="d-flex icons-nav">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #000000;" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                        <i class="fa-solid fa-arrow-right-to-bracket fa-2xl" style="color: #000000;"></i>
+                    </a>
+                    <!-- Modal للبحث -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <form class="d-flex" role="search">
+                                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                        <button class="btn btn-outline-success" type="submit">Search</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="my-acount.html"><i class="fa-regular fa-user fa-2xl" style="color: #000000;"></i></a>
+                </div>
+            </div>
+            
+            <!-- زر فتح Offcanvas للسلة -->
+            <button class="btn position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle cart" style="padding-left: 3rem;">
+                <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #000000;"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Modal لتسجيل الدخول -->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Sign In</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-feuild">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <img src="asseets/image/Paste image (13).png" alt="">
+                            </div>
+                            <div class="col-lg-6 col-md-12 content-form-sign-in mb-5">
+                                <h1 class="mb-5">Sign In</h1>
+                                <p class="mb-5">Don’t have an account yet? <a href="sigm-up.html" class="q-sign" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Sign Up</a></p>
+                                <form action="">
+                                    <div class="form-email mb-5">
+                                        <input type="email" id="email" class="input-form" placeholder="Your username or email address">
+                                    </div>
+                                    <div class="form-pas mb-5">
+                                        <input type="password" id="password" class="input-form" placeholder="Password">
+                                        <span class="password-toggle"><i class="uil uil-eye"></i></span>
+                                    </div>
+                                    <div class="d-flex mb-5">
+                                        <div class="d-flex remmber"> 
+                                            <input type="checkbox" name="remmber" id="remmber" class="checkbox">
+                                            <label for="remmber">Remember me</label>
+                                        </div>
+                                        <a href="#" class="forget">Forgot password?</a>
+                                    </div>
+                                    <button class="btn-sign-in">Sign In</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal للتسجيل -->
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Sign Up</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-feuild">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <img src="asseets/image/Paste image (13).png" alt="">
+                            </div>
+                            <div class="col-lg-6 col-md-12 content-form-sign-up mb-5">
+                                <h1 class="mb-5">Sign Up</h1>
+                                <p class="mb-5">Already have an account? <a href="sign-in.html" class="q-sign" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Sign In</a></p>
+                                <form action="">
+                                    <div class="mb-5">
+                                        <input type="text" id="email" class="input-form" placeholder="Your name">
+                                    </div>
+                                    <div class="mb-5">
+                                        <input type="text" id="email" class="input-form" placeholder="Username">
+                                    </div>
+                                    <div class="mb-5">
+                                        <input type="email" id="email" class="input-form" placeholder="Email address">
+                                    </div>
+                                    <div class="mb-5">
+                                        <input type="password" id="password" class="input-form" placeholder="Password">
+                                        <span class="password-toggle"><i class="uil uil-eye"></i></span>
+                                    </div>
+                                    <div class="d-flex mb-5">
+                                        <div class="d-flex remmber"> 
+                                            <input type="checkbox" name="remmber" id="remmber" class="checkbox">
+                                            <label for="remmber">I agree with <a href="#" class="forget">Privacy Policy</a> and <a href="#" class="forget">Terms of Use</a></label>
+                                        </div>
+                                    </div>
+                                    <button class="btn-sign-in">Sign Up</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Offcanvas للسلة -->
+    <div class="offcanvas offcanvas-end offcanvas-cart" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+            <h2>Cart</h2>
+            <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="cart">
+                <div id="cart-items">
+                    <!-- المنتجات ستظهر هنا -->
+                </div>
+                <div id="cart-summary">
+                    <div class="d-flex1">
+                        <p class="Subtotal">Subtotal:</p>
+                        <p id="cart-subtotal">$0.00</p>
+                    </div>
+                    <div class="d-flex1">
+                        <p class="Total">Total:</p>
+                        <p id="cart-total">$0.00</p>
+                    </div>
+                    <a href="cart.html" id="checkout-btn">Checkout</a>
+                    <a href="#" class="view">View Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+          <div class="my-container">
+            <div class="row">
+              <div class="col image-shop image-blog">
+                <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                  <ol class="breadcrumb bread-shop">
+                    <li class="breadcrumb-item"><a href="home-bage.html">Home</a></li>
+                    <li class="breadcrumb-item active Library" aria-current="page">blog</li>
+                  </ol>
+                </div>
+                <h1>our blog</h1>
+                <p>Let’s design the place you always imagined.</p>
+                </div>
+            </div>
+          </div>
+    </header>
+
+    <main>
+        <section class="blog-item">
+            <div class="my-container">
+              <div class="row ">
+               
+                <div class="col">
+                    <div class="d-flex p-3 ">
+                        <h2>all blog</h2>
+                        <div class="filter">
+                            <i class="fa-solid fa-table-cells fa-2xl" style="color: #000000;"></i>
+                            <i class="fa-solid fa-grip-lines fa-2xl" style="color: #000000;"></i>                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="row con-grid">
+                        <div class="col-lg-4 col-md-12 mb-5 pro-grid">
+                          <img src="asseets/image/img.png" alt="" class="mb-5">
+                          <p class="ar-p">7 ways to decor your home like a professional</p>
+                          <p class="date">October 16, 2023</p>
+                        </div>
+                        <div class="col-lg-4 col-md-12 mb-5 pro-grid">
+                          <img src="asseets/image/img (1).png" alt="" class="mb-5">
+                          <p class="ar-p">Inside a beautiful kitchen organization</p>
+                          <p class="date">October 16, 2023</p>
+            
+                        </div>
+                        <div class="col-lg-4 col-md-12 mb-5 pro-grid">
+                          <img src="asseets/image/img container.png" alt="" class="mb-5">
+                          <p class="ar-p"> Decor your bedroom for your children</p>
+                          <p class="date">October 16, 2023</p>
+                        </div>
+                        <div class="col-lg-4 col-md-12 mb-5 pro-grid">
+                          <img src="asseets/image/img (2).png" alt="" class="mb-5">
+                          <p class="ar-p">Modern texas home is beautiful and completely kid-friendly</p>
+                          <p class="date">October 16, 2023</p>
+                        </div>
+                 
+                        <div class="col-lg-4 col-md-12 mb-5 pro-grid" >
+                          <img src="asseets/image/img (3).png" alt="" class="mb-5">
+                          <p class="ar-p">Modern texas home is beautiful and completely kid-friendly</p>
+                          <p class="date">October 16, 2023</p>
+                        </div>
+                 
+                        <div class="col-lg-4 col-md-12 mb-5 pro-grid">
+                          <img src="asseets/image/img (4).png" alt="" class="mb-5"> 
+                          <p class="ar-p">Modern texas home is beautiful and completely kid-friendly</p>
+                          <p class="date">October 16, 2023</p>
+                        </div>
+                 
+                        <div class="col-lg-4 col-md-12 mb-5 pro-grid">
+                          <img src="asseets/image/img (5).png" alt="" class="mb-5">
+                          <p class="ar-p">Modern texas home is beautiful and completely kid-friendly</p>
+                          <p class="date">October 16, 2023</p>
+                        </div>
+                 
+                        <div class="col-lg-4 col-md-12 mb-5 pro-grid">
+                          <img src="asseets/image/img (6).png" alt="" class="mb-5">
+                          <p class="ar-p">Modern texas home is beautiful and completely kid-friendly</p>
+                          <p class="date">October 16, 2023</p>
+                        </div>
+                 
+                        <div class="col-lg-4 col-md-12 mb-5 pro-grid">
+                          <img src="asseets/image/img (7).png" alt="" class="mb-5">
+                          <p class="ar-p">Modern texas home is beautiful and completely kid-friendly</p>
+                          <p class="date">October 16, 2023</p>
+                        </div>
+                 
+                        
+             </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="content-news">
+              <h1>Join Our Newsletter</h1>
+              <p>Sign up for deals, new products and promotions</p>
+              <div class="signup-container">
+                <div class="input-wrapper">
+                    <span class="icon"><i class="fa-regular fa-envelope fa-lg" style="color: #000000;"></i></span>
+                    <input type="email" placeholder="Email address" class="email-input">
+                </div>
+                <button class="signup-button" type="submit">Signup</button>
+              </div>
+            </div>
+          </section>
+        </main>
+    
+        <footer class="footer">
+          <div class="my-container">
+            <div class="row footer-row">
+              <div class="col-lg-2 col-md-12">
+                <a class="brand" href="#">3legant. </a>
+              </div>
+              <div class="col-lg-2 col-md-12">
+                <p>Gift & Decoration Store</p>
+              </div>
+              <div class="col-lg-8 list-footer1">
+                <a href="home-bage.html" class="col-md-12 list-footer">home</a>
+                <a href="shop-page.html" class="col-md-12 list-footer">shop</a>
+                <a href="product.html" class="col-md-12 list-footer">product</a>
+                <a href="blog.html" class="col-md-12 list-footer">blog</a>
+                <a href="contact-us.html" class="col-md-12 list-footer">contact us</a>
+              </div  >
+            </div>
+            <hr>
+           
+              <div class="copy-sec">
+                <a href="#" class="copy">Copyright © 2023 3legant. All rights reserved</a>
+                <div class="pt">
+                  <a href="#" class="Privacy">Privacy Policy</a>
+                  <a href="#" class="terms">terms of us</a>
+                </div>
+                  <div class="social-icon-footer d-flex">
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i></a>
+                    <a href="https://nl-nl.facebook.com/"><i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i></a>
+                  </div>
+        
+    
+                
+                
+              </div>
+          
+            </div>
+          </div>
+          
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="asseets/add-cart.js"></script>
+        <script>
+          const gridIcon = document.querySelector('.fa-table-cells');
+        const listIcon = document.querySelector('.fa-grip-lines');
+    
+        // تحديد العنصر الذي يحتوي على المنتجات
+        const productContainer1 = document.querySelector('.row.con-grid');
+    
+        // تغيير العرض إلى Grid
+        gridIcon.addEventListener('click', () => {
+            productContainer.classList.remove('product-list');
+            productContainer.classList.add('pro-grid');
+        });
+    
+        // تغيير العرض إلى List
+        listIcon.addEventListener('click', () => {
+            productContainer.classList.remove('pro-grid');
+            productContainer.classList.add('product-list');
+        });
+  
+
+        </script>
+        
+    </body>
+    </html>
+              

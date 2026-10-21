@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- تعريف مجموعة الأحرف وتكوين العرض للجوال -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ربط خطوط Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+    <!-- ربط Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"> 
+    
+    <!-- ربط Font Awesome -->
+    <link rel="stylesheet" href="asseets/font/fontawesome-free-6.6.0-web/css/all.css">
+    
+    <!-- ربط Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <!-- ربط ملفات CSS الخاصة -->
+    <link rel="stylesheet" href="asseets/css/sign.css">
+    <link rel="stylesheet" href="asseets/css/home.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <!-- بداية الهيدر -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container my-container">
+                <!-- زر التبديل للجوال -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Offcanvas للتنقل في الجوال -->
+                <div class="offcanvas offcanvas-start myoffcanvas" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title navbar-brand" id="offcanvasNavbarLabel">3legant.</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <!-- شريط البحث -->
+                        <form class="d-flex mt-3 position-relative" role="search">
+                            <input class="form-control form-search me-2" type="search" placeholder="Search" aria-label="Search">
+                            <i class="fa-solid fa-magnifying-glass fa-2xl icon-sea" style="color: #000000;"></i>
+                        </form>
+                        
+                        <!-- روابط التنقل -->
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item"><a class="nav-link li-res active" href="home-bage.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link li-res " href="shop-page.html">Shop</a></li>      
+                            <li class="nav-item"><a class="nav-link li-res" href="product.html">Product</a></li>
+                            <li class="nav-item"><a class="nav-link li-res" href="contact-us.html">Contact Us</a></li>
+                            <li class="nav-item"><a class="nav-link li-res" href="blog.html">Blog</a></li>
+                        </ul>
+                        
+                        <!-- السلة وقائمة الأماني -->
+                        <div class="d-flex cart-res">
+                            <a href="#">Cart</a>
+                            <button class="btn position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle cart">
+                                <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #000000;"></i>
+                            </button>
+                        </div>
+                        <div class="d-flex love-res">
+                            <a href="#">My Account</a>
+                            <a href="my-acount.html"><i class="fa-regular fa-user fa-2xl" style="color: #000000;"></i></a>
+                        </div>
+                        
+                        <!-- زر تسجيل الدخول -->
+                        <button class="log-in mb-5" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">Sign In</button>
+                        
+                        <!-- أيقونات وسائل التواصل الاجتماعي -->
+                        <div class="social-icon-footer d-flex">
+                            <a href="#"><i class="fa-brands fa-instagram fa-2xl" style="color: #141718;"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook fa-2xl" style="color: #141718;"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube fa-2xl" style="color: #141718;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- شعار الموقع -->
+                <a class="navbar-brand" href="#">3legant.</a>
+                
+                <!-- روابط التنقل لأجهزة الكمبيوتر -->
+                <div class="collapse navbar-collapse my-nav" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="home-bage.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop-page.html">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="product.html">Product</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    </ul>
+                    
+                    <!-- أيقونات البحث والحساب -->
+                    <div class="d-flex icons-nav">
+                        <a href="#"><i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #000000;" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                            <i class="fa-solid fa-arrow-right-to-bracket fa-2xl" style="color: #000000;"></i>
+                        </a>
+                        <!-- Modal للبحث -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <form class="d-flex" role="search">
+                                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                            <button class="btn btn-outline-success" type="submit">Search</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="my-acount.html"><i class="fa-regular fa-user fa-2xl" style="color: #000000;"></i></a>
+                    </div>
+                </div>
+                
+                <!-- زر فتح Offcanvas للسلة -->
+                <button class="btn position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle cart" style="padding-left: 3rem;">
+                    <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #000000;"></i>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Modal لتسجيل الدخول -->
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Sign In</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-feuild">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12">
+                                    <img src="asseets/image/Paste image (13).png" alt="">
+                                </div>
+                                <div class="col-lg-6 col-md-12 content-form-sign-in mb-5">
+                                    <h1 class="mb-5">Sign In</h1>
+                                    <p class="mb-5">Don’t have an account yet? <a href="sigm-up.html" class="q-sign" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Sign Up</a></p>
+                                    <form action="">
+                                        <div class="form-email mb-5">
+                                            <input type="email" id="email" class="input-form" placeholder="Your username or email address">
+                                        </div>
+                                        <div class="form-pas mb-5">
+                                            <input type="password" id="password" class="input-form" placeholder="Password">
+                                            <span class="password-toggle"><i class="uil uil-eye"></i></span>
+                                        </div>
+                                        <div class="d-flex mb-5">
+                                            <div class="d-flex remmber"> 
+                                                <input type="checkbox" name="remmber" id="remmber" class="checkbox">
+                                                <label for="remmber">Remember me</label>
+                                            </div>
+                                            <a href="#" class="forget">Forgot password?</a>
+                                        </div>
+                                        <button class="btn-sign-in">Sign In</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal للتسجيل -->
+        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Sign Up</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-feuild">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12">
+                                    <img src="asseets/image/Paste image (13).png" alt="">
+                                </div>
+                                <div class="col-lg-6 col-md-12 content-form-sign-up mb-5">
+                                    <h1 class="mb-5">Sign Up</h1>
+                                    <p class="mb-5">Already have an account? <a href="sign-in.html" class="q-sign" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Sign In</a></p>
+                                    <form action="">
+                                        <div class="mb-5">
+                                            <input type="text" id="email" class="input-form" placeholder="Your name">
+                                        </div>
+                                        <div class="mb-5">
+                                            <input type="text" id="email" class="input-form" placeholder="Username">
+                                        </div>
+                                        <div class="mb-5">
+                                            <input type="email" id="email" class="input-form" placeholder="Email address">
+                                        </div>
+                                        <div class="mb-5">
+                                            <input type="password" id="password" class="input-form" placeholder="Password">
+                                            <span class="password-toggle"><i class="uil uil-eye"></i></span>
+                                        </div>
+                                        <div class="d-flex mb-5">
+                                            <div class="d-flex remmber"> 
+                                                <input type="checkbox" name="remmber" id="remmber" class="checkbox">
+                                                <label for="remmber">I agree with <a href="#" class="forget">Privacy Policy</a> and <a href="#" class="forget">Terms of Use</a></label>
+                                            </div>
+                                        </div>
+                                        <button class="btn-sign-in">Sign Up</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Offcanvas للسلة -->
+        <div class="offcanvas offcanvas-end offcanvas-cart" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+                <h2>Cart</h2>
+                <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div id="cart">
+                    <div id="cart-items">
+                        <!-- المنتجات ستظهر هنا -->
+                    </div>
+                    <div id="cart-summary">
+                        <div class="d-flex1">
+                            <p class="Subtotal">Subtotal:</p>
+                            <p id="cart-subtotal">$0.00</p>
+                        </div>
+                        <div class="d-flex1">
+                            <p class="Total">Total:</p>
+                            <p id="cart-total">$0.00</p>
+                        </div>
+                        <a href="cart.html" id="checkout-btn">Checkout</a>
+                        <a href="#" class="view">View Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Swiper للهيرو -->
+        <div class="my-container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="swiper Swiper_hero">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="asseets/image/hero.png" alt="" class="img-hero">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="asseets/image/hero.png" alt="" class="img-hero">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="asseets/image/hero.png" alt="" class="img-hero">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- بداية المحتوى الرئيسي -->
+    <main>
+        <!-- قسم الفوتر الهيرو -->
+        <section class="footer-hero">
+            <div class="my-container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <h1>Simply Unique<br>Simply Better.</h1>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <p><a href="#">3legant</a> is a gift & decorations store based in HCMC, Vietnam. Est since 2019.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم المتجر -->
+        <section class="shop-sec mb-5">
+            <div class="my-container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 Living-Room position-relative">
+                        <img src="asseets/image/Paste image (2).png" alt="">
+                        <div class="position-absolute con-living">
+                            <h2 class="mb-4"><a href="#">Living Room</a></h2>
+                            <a href="shop-page.html" class="shop-now">Shop Now <i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a>
+                        </div> 
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="col-md-12 position-relative mb-5">
+                            <img src="asseets/image/Paste image (3).png" alt="">
+                            <div class="position-absolute con-Bedroom">
+                                <h2 class="mb-4"><a href="#">Bedroom</a></h2>
+                                <a href="shop-page.html" class="shop-now">Shop Now <i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a>
+                            </div> 
+                        </div>
+                        <div class="col-md-12 position-relative">
+                            <img src="asseets/image/Image Placeholder.png" alt="">
+                            <div class="position-absolute con-Kitchen">
+                                <h2 class="mb-4"><a href="#">Kitchen</a></h2>
+                                <a href="shop-page.html" class="shop-now">Shop Now <i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a>
+                            </div> 
+                        </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+     <!-- قسم وصول المنتجات الجديدة -->
+     <section class="Arrivals-sec">
+      <div class="my-container">
+        <h1>New  Arrivals</h1>
+        <div class="swiper mySwiper swiper-hero">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="shop-card">
+                <div class="img-card position-relative mb-3">
+                  <img src="asseets/image/Paste image (4).png" alt="">
+                  <p class="new">new</p>
+                  <p class="discount">-50%</p>
+                
+                  <button class="add-cart" data-id="1">Add to cart</button>
+                  </div>
+                </div>
+                <div class="content-card">
+                  <div class="rate d-flex mb-3">
+                    <i class="fa-solid fa-star" style="color: #343839;"></i>
+                    <i class="fa-solid fa-star" style="color: #343839;"></i>
+                    <i class="fa-solid fa-star" style="color: #343839;"></i>
+                    <i class="fa-solid fa-star" style="color: #343839;"></i>
+                    <i class="fa-solid fa-star" style="color: #343839;"></i>
+                  </div>
+                  <p><a href="#" class="mb-3">loveseat sofa</a></p>
+                  <p>$199.00<span>$400.00</span></p>
+                </div> 
+              </div>
+            <div class="swiper-slide">
+              <div class="shop-card">
+                <div class="img-card position-relative mb-3">
+                  <img src="asseets/image/Image Placeholder (3).png" alt="">
+                  <p class="new">new</p>
+                 
+                  <button class="add-cart"data-id="2" id="add-cart">Add to cart</button>
+                  </div>
+                </div>
+                <div class="content-card">
+                  <div class="rate d-flex mb-3">
+                    <i class="fa-solid fa-star" style="color: #343839;"></i>
+                    <i class="fa-solid fa-star" style="color: #343839;"></i>
+                    <i class="fa-solid fa-star" style="color: #343839;"></i>
+                    <i class="fa-solid fa-star" style="color: #343839;"></i>
+                    <i class="fa-solid fa-star" style="color: #343839;"></i>
+                  </div>
+                  <p><a href="#" class="mb-3">Table Lamp</a></p>
+                  <p>$$24.99</p>
+                </div> 
+              </div>
+            <div class="swiper-slide">
+              <div class="shop-card">
+                <div class="img-card position-relative mb-3">
+                  <img src="asseets/image/Paste image (5).png" alt="">
+                  <p class="new">new</p>
+                 
+                  <button class="add-cart" data-id="3">Add to cart</button>
+                  </div>
+                </div>
+                <div class="content-card">
+                  <div class="rate d-flex mb-3">
+                    <i class="fa-solid fa-star" style="color: #343839;"></i>
+                    <i class="fa-solid fa-star" style="color: #343839;"></i>
+                    <i class="fa-solid fa-star" style="color: #343839;"></i>
+                    <i class="fa-solid fa-star" style="color: #343839;"></i>
+                    <i class="fa-solid fa-star" style="color: #343839;"></i>
+                  </div>
+                  <p><a href="#" class="mb-3">Beige Table Lamp</a></p>
+                  <p>$24.99</p>
+                </div> 
+              </div>
+            <div class="swiper-slide">
+              <div class="shop-card">
+                <div class="img-card position-relative mb-3">
+                  <img src="asseets/image/Image Placeholder (2).png" alt="">
+                  <p class="new">new</p>
+                 
+                  <button class="add-cart" data-id="4">Add to cart</button>
+                  </div>
+                </div>
+                <div class="content-card">
+                  <div class="rate d-flex mb-3">
+                    <i class="fa-solid fa-star" style="color: #343839;"></i>
+                    <i class="fa-solid fa-star" style="color: #343839;"></i>
+                    <i class="fa-solid fa-star" style="color: #343839;"></i>
+                    <i class="fa-solid fa-star" style="color: #343839;"></i>
+                    <i class="fa-solid fa-star" style="color: #343839;"></i>
+                  </div>
+                  <p><a href="#" class="mb-3">Bamboo basket</a></p>
+                  <p>$24.99</p>
+                </div> 
+              </div>
+        
+            <div class="swiper-slide">
+              <div class="shop-card">
+                <div class="img-card position-relative mb-3">
+                  <img src="asseets/image/Paste image (14).png" alt="">
+                  <p class="new">new</p>
+                  
+                  <button class="add-cart" data-id="5">Add to cart</button>
+                  </div>
+                </div>
+                <div class="content-card">
+                  <div class="rate d-flex mb-3">
+                    <i class="fa-solid fa-star" style="color: #343839;"></i>
+                    <i class="fa-solid fa-star" style="color: #343839;"></i>
+                    <i class="fa-solid fa-star" style="color: #343839;"></i>
+                    <i class="fa-solid fa-star" style="color: #343839;"></i>
+                    <i class="fa-solid fa-star" style="color: #343839;"></i>
+                  </div>
+                  <p><a href="#" class="mb-3">loveseat sofa</a></p>
+                  <p>$199.00<span>$400.00</span></p>
+                </div> 
+              </div>
+            <div class="swiper-slide">
+              <div class="shop-card">
+                <div class="img-card position-relative mb-3">
+                  <img src="asseets/image/Paste image (15).png" alt="">
+                  <p class="new">new</p>
+                  
+                  <button class="add-cart" data-id="6">Add to cart</button>
+                  </div>
+                </div>
+                <div class="content-card">
+                  <div class="rate d-flex mb-3">
+                    <i class="fa-solid fa-star" style="color: #343839;"></i>
+                    <i class="fa-solid fa-star" style="color: #343839;"></i>
+                    <i class="fa-solid fa-star" style="color: #343839;"></i>
+                    <i class="fa-solid fa-star" style="color: #343839;"></i>
+                    <i class="fa-solid fa-star" style="color: #343839;"></i>
+                  </div>
+                  <p><a href="#" class="mb-3">loveseat sofa</a></p>
+                  <p>$199.00<span>$400.00</span></p>
+                </div> 
+              </div>
+            </div>
+          
+    
+          
+          
+    
+      
+          <div class="swiper-scrollbar"></div>
+        </div>
+
+            
+      </div>
+    </section>
+
+        <!-- قسم الخدمات -->
+        <section class="Services">
+          <div class="my-container">
+            <div class="row">
+              <div class="col-lg-3 col-xs-6 ser">
+                <div class="content-services">
+                  <i class="fa-solid fa-truck fa-2xl mb-5"></i>
+                  <h2>Free Shipping</h2>
+                  <p>Order above $200</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-xs-6 ser">
+                <div class="content-services">
+                  <i class="fa-solid fa-money-bill fa-2xl mb-5"></i>
+                  <h2>Money-back</h2>
+                  <p>30 days guarantee</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-xs-6 ser">
+                <div class="content-services">
+                  <i class="fa-solid fa-lock fa-2xl mb-5"></i>
+                  <h2>Secure Payments</h2>
+                  <p>Secured by Stripe</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-xs-6 ser">
+                <div class="content-services">
+                  <i class="fa-solid fa-phone fa-2xl mb-5"></i>
+                  <h2>24/7 Support</h2>
+                  <p>Phone and Email</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- قسم العروض الخاصة -->
+        <section class="lower-price"> 
+          <div class="row">
+            <div class="col-lg-6 col-md-12" style="background-color: #F3F5F7;">
+              <img src="asseets/image/Image Placeholder (4).png" alt="">
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <div class="content-lower">
+                <h2>SALE UP TO 35% OFF</h2>
+                <h1>HUNDREDS of New lower prices!</h1>
+                <p>It’s more affordable than ever to give every room in your home a stylish makeover</p>
+                <a href="shop-page.html" class="shop-now">Shop now <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- قسم المقالات -->
+        <section class="Articles">
+          <div class="my-container">
+            <div class="d-flex more-article">
+              <h1>Articles</h1>
+              <a href="article.html" class="shop-now">More Articles <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-xs-4">
+                <img src="asseets/image/img.png" alt="">
+                <p>7 ways to decor your home</p>
+              </div>
+              <div class="col-lg-4 col-xs-4">
+                <img src="asseets/image/img (1).png" alt="">
+                <p>7 ways to decor your home</p>
+              </div>
+              <div class="col-lg-4 col-xs-4">
+                <img src="asseets/image/img container.png" alt="">
+                <p>7 ways to decor your home</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+              <!-- قسم النشرة الإخبارية -->
+        <section class="newsletter">
+          <div class="content-news">
+            <h1>Join Our Newsletter</h1>
+            <p>Sign up for deals, new products and promotions</p>
+            <div class="signup-container">
+              <div class="input-wrapper">
+                <!-- أيقونة البريد الإلكتروني -->
+                <span class="icon"><i class="fa-regular fa-envelope fa-lg" style="color: #000000;"></i></span>
+                <input type="email" placeholder="Email address" class="email-input">
+              </div>
+              <button class="signup-button" type="submit">Signup</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- قسم التذييل (Footer) -->
+        <footer class="footer">
+          <div class="my-container">
+            <div class="row footer-row">
+              <!-- شعار العلامة التجارية -->
+              <div class="col-lg-2 col-md-12">
+                <a class="brand" href="#">3legant.</a>
+              </div>
+              <!-- وصف بسيط للموقع -->
+              <div class="col-lg-2 col-md-12">
+                <p>Gift & Decoration Store</p>
+              </div>
+              <!-- روابط التذييل -->
+              <div class="col-lg-8 list-footer1">
+                <a href="home-bage.html" class="col-md-12 list-footer">Home</a>
+                <a href="shop-page.html" class="col-md-12 list-footer">Shop</a>
+                <a href="product.html" class="col-md-12 list-footer">Product</a>
+                <a href="blog.html" class="col-md-12 list-footer">Blog</a>
+                <a href="contact-us.html" class="col-md-12 list-footer">Contact Us</a>
+              </div>
+            </div>
+
+            <!-- خط فاصل بين الأجزاء -->
+            <hr>
+
+            <div class="copy-sec">
+              <!-- حقوق الملكية -->
+              <a href="#" class="copy">Copyright &copy; 2023 3legant. All rights reserved</a>
+
+              <!-- روابط سياسة الخصوصية والشروط -->
+              <div class="pt">
+                <a href="#" class="Privacy">Privacy Policy</a>
+                <a href="#" class="terms">Terms of Use</a>
+              </div>
+
+              <!-- أيقونات وسائل التواصل الاجتماعي -->
+              <div class="social-icon-footer d-flex">
+                <a href="https://www.instagram.com/">
+                  <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+                </a>
+                <a href="https://nl-nl.facebook.com/">
+                  <i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i>
+                </a>
+                <a href="https://www.youtube.com/">
+                  <i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="asseets/add-cart.js"></script>
+      <script>
+        var Swiper_hero = new Swiper(".Swiper_hero", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        });
+    
+      </script>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          centeredSlides: false,
+          slidesPerGroupSkip: 1,
+          grabCursor: true,
+          keyboard: {
+            enabled: true,
+          },
+          breakpoints: {
+            769: {
+              slidesPerView: 4,
+              slidesPerGroup: 1,
+            },
+            300:{
+              slidesPerView: 1.5,
+              slidesPerGroup: 1,
+            }
+          },
+          scrollbar: {
+            el: ".swiper-scrollbar",
+          },
+        
+        });
+        </script>
+        <script>
+            const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+            const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+        </script>
+       
+      
+          
+        </body>
+        
+    

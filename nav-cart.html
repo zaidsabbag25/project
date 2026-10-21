@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="asseets/add-cart.js">
+    <style>
+      .cart-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+      }
+      .offcanvas-header {
+        padding: 10px 10px;
+      }
+
+      .cart-item-details {
+        flex: 1;
+      }
+
+      .cart-item-actions {
+        width: 32%;
+        border: 1px solid rgb(0, 0, 0);
+      }
+
+      #cart-summary {
+        margin-top: 2rem;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 7rem 12rem 0rem;
+        align-items: center;
+      }
+      .d-flex {
+        align-items: center;
+        justify-content: space-between;
+      }
+      .r1 p,
+      .view {
+        font-size: 14px;
+        font-weight: 600;
+        color: #141718;
+        display: block;
+        text-align: center;
+        padding-top: 12px;
+      }
+      .view {
+        text-align: center;
+        padding-top: 12px;
+      }
+      .r2 p {
+        font-size: 12px;
+        font-weight: 400;
+        color: #6c7275;
+      }
+      span {
+        font-size: 12px;
+        font-weight: 400;
+        color: #141718;
+      }
+      .remove-btn {
+        border: white;
+        background: white;
+        padding-bottom: 21px;
+      }
+      .decrease-btn,
+      .increase-btn {
+        border: white;
+        background: white;
+      }
+      .Total,
+      .cart-total {
+        font-weight: 500;
+        font-size: 20px;
+        color: #141718;
+      }
+      #cart-total {
+        font-weight: 500;
+        font-size: 20px;
+        color: #141718;
+      }
+      .Subtotal {
+        font-weight: 400;
+        font-size: 16px;
+        color: #141718;
+      }
+      #cart-subtotal {
+        font-weight: 600;
+        font-size: 16px;
+        color: #141718;
+      }
+      #checkout-btn {
+        width: 365px;
+        height: 52px;
+        color: white;
+        background-color: #000000;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 8px;
+        border: #000000;
+      }
+      .d-flex1 {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #e8ecef;
+        margin-bottom: 20px;
+      }
+    </style>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiaryk fixed-top">
+      <div class="container-fluid">
+       
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h2>Cart</h2>
+            <button
+              type="button"
+              class="btn-close btn-close-black"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div id="cart">
+              <div id="cart-items">
+                <!-- المنتجات ستظهر هنا -->
+              </div>
+              <div id="cart-summary">
+                <div class="d-flex1">
+                  <p class="Subtotal">Subtotal:</p>
+                  <p id="cart-subtotal">$0.00</p>
+                </div>
+                <div class="d-flex1">
+                  <p class="Total">Total:</p>
+                  <p id="cart-total">$0.00</p>
+                </div>
+
+                <button id="checkout-btn">Checkout</button>
+                <a href="#" class="view">view cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="add-cart" data-id="1" onclick="click">Add to cart</button>
+     
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="asseets/add-cart.js"></script>
+   
+  </body>
+</html>
