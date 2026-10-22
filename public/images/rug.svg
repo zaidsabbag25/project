@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" role="img" aria-labelledby="title desc"><title id="title">Natural woven wool rug with geometric border</title><desc id="desc">Original 3legant concept illustration for the demonstration catalog. This is a drawn placeholder, not a photograph of a product for sale.</desc><defs>
+ <linearGradient id="back" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f3efe8"/><stop offset="1" stop-color="#e4ddd2"/></linearGradient>
+ <linearGradient id="linen" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#e7ddcc"/><stop offset=".5" stop-color="#d3c4ad"/><stop offset="1" stop-color="#b6a58d"/></linearGradient>
+ <linearGradient id="forest" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#617568"/><stop offset=".55" stop-color="#3f5548"/><stop offset="1" stop-color="#2d4036"/></linearGradient>
+ <linearGradient id="wood" x1="0" y1="0" x2="1" y2=".6"><stop stop-color="#a17e59"/><stop offset=".45" stop-color="#c09a6d"/><stop offset="1" stop-color="#775739"/></linearGradient>
+ <linearGradient id="ceramic" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#aaa390"/><stop offset=".35" stop-color="#e3dccb"/><stop offset=".68" stop-color="#c7bfaa"/><stop offset="1" stop-color="#9c927d"/></linearGradient>
+ <linearGradient id="brass" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#806544"/><stop offset=".4" stop-color="#cbb17f"/><stop offset=".6" stop-color="#a4885d"/><stop offset="1" stop-color="#685237"/></linearGradient>
+ <radialGradient id="shade"><stop stop-color="#777065" stop-opacity=".28"/><stop offset="1" stop-color="#777065" stop-opacity="0"/></radialGradient>
+ <filter id="soft"><feGaussianBlur stdDeviation="9"/></filter>
+ <pattern id="weave" width="6" height="6" patternUnits="userSpaceOnUse"><path d="M0 0h6M0 3h6M0 0v6M3 0v6" stroke="#7a6c52" stroke-opacity=".06" stroke-width=".7"/></pattern>
+ </defs><path fill="url(#back)" d="M0 0h800v900H0z"/><ellipse cx="400" cy="730" rx="300" ry="75" fill="url(#shade)"/>
+ <path d="m122 382 451-89 134 350-453 110z" fill="#988a71" opacity=".18" filter="url(#soft)"/>
+ <path d="m104 369 456-91 136 350-458 110z" fill="#d0c1a5"/>
+ <path d="m126 380 421-84 124 320-421 102z" fill="#e8ddc6"/>
+ <path d="m152 392 380-75 109 285-381 93z" fill="none" stroke="#92917a" stroke-width="5"/>
+ <path d="m173 402 346-68 100 256-348 85z" fill="none" stroke="#b9a78a" stroke-width="2"/>
+ <path d="m128 380 542 234m-527-219 523 222m-507-208 501 213m-485-199 481 204m-465-191 459 194m-444-181 437 184m-422-171 415 176m-399-163 393 166m-378-154 371 157m-356-144 350 148m-335-136 328 138m-313-126 306 129m-290-117 284 120m-269-106 263 110m-247-97 240 102m-225-88 219 92m-204-79 197 83m-182-70 176 74m-160-60 153 65m-138-51 132 55m-116-42 110 46m-94-32 88 37m-73-23 67 28" stroke="#b9a98d" stroke-width="1" opacity=".45"/>
+ <path d="m104 369-11-12m30 8-11-13m31 9-11-13m31 9-11-13m31 9-11-13m31 9-11-13m31 9-11-13m31 9-11-13m31 9-11-13m31 9-11-13m31 9-11-13m31 9-11-13m31 9-11-13m31 9-11-13m31 9-11-13m31 9-11-13m31 9-11-13m31 9-11-13m31 9-11-13m31 9-11-13m31 9-11-13m31 9-11-13m31 9-11-13m31 9-11-13" stroke="#c5b391" stroke-width="3"/>
+</svg>

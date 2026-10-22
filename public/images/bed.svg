@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" role="img" aria-labelledby="title desc"><title id="title">Upholstered linen bed with soft layers and walnut legs</title><desc id="desc">Original 3legant concept illustration for the demonstration catalog. This is a drawn placeholder, not a photograph of a product for sale.</desc><defs>
+ <linearGradient id="back" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f3efe8"/><stop offset="1" stop-color="#e4ddd2"/></linearGradient>
+ <linearGradient id="linen" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#e7ddcc"/><stop offset=".5" stop-color="#d3c4ad"/><stop offset="1" stop-color="#b6a58d"/></linearGradient>
+ <linearGradient id="forest" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#617568"/><stop offset=".55" stop-color="#3f5548"/><stop offset="1" stop-color="#2d4036"/></linearGradient>
+ <linearGradient id="wood" x1="0" y1="0" x2="1" y2=".6"><stop stop-color="#a17e59"/><stop offset=".45" stop-color="#c09a6d"/><stop offset="1" stop-color="#775739"/></linearGradient>
+ <linearGradient id="ceramic" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#aaa390"/><stop offset=".35" stop-color="#e3dccb"/><stop offset=".68" stop-color="#c7bfaa"/><stop offset="1" stop-color="#9c927d"/></linearGradient>
+ <linearGradient id="brass" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#806544"/><stop offset=".4" stop-color="#cbb17f"/><stop offset=".6" stop-color="#a4885d"/><stop offset="1" stop-color="#685237"/></linearGradient>
+ <radialGradient id="shade"><stop stop-color="#777065" stop-opacity=".28"/><stop offset="1" stop-color="#777065" stop-opacity="0"/></radialGradient>
+ <filter id="soft"><feGaussianBlur stdDeviation="9"/></filter>
+ <pattern id="weave" width="6" height="6" patternUnits="userSpaceOnUse"><path d="M0 0h6M0 3h6M0 0v6M3 0v6" stroke="#7a6c52" stroke-opacity=".06" stroke-width=".7"/></pattern>
+ </defs><path fill="url(#back)" d="M0 0h800v900H0z"/><ellipse cx="400" cy="730" rx="300" ry="75" fill="url(#shade)"/>
+ <ellipse cx="400" cy="746" rx="306" ry="36" fill="#958b78" opacity=".2" filter="url(#soft)"/>
+ <path d="m159 658-13 88h25l24-88m409 0 23 88h26l-12-88" fill="#705338"/>
+ <rect x="149" y="268" width="502" height="347" rx="67" fill="url(#linen)"/>
+ <path d="M178 295q224-22 444 0v253H178z" fill="url(#weave)"/>
+ <path d="m174 452-59 192q-12 39 26 48 260 49 518 0 39-9 26-48l-59-192z" fill="#ad9e87"/>
+ <path d="m179 437-53 190q270 49 548 0l-54-190z" fill="#f4efe5"/>
+ <path d="M174 470q223 19 452 0l43 144q-271 47-538 0z" fill="#ded4c1"/>
+ <path d="m145 576-17 52q273 52 547 0l-16-52q-255 39-514 0" fill="url(#forest)"/>
+ <path d="M146 602q260 45 514 0" stroke="#a0ac9d" stroke-width="3" opacity=".4" fill="none"/>
+ <rect x="214" y="378" width="179" height="93" rx="25" fill="#fbf8f0" transform="rotate(-5 304 423)"/>
+ <rect x="408" y="378" width="179" height="93" rx="25" fill="#f0eadd" transform="rotate(5 498 423)"/>
+ <path d="m192 491 27 41m354-33 39 56M296 501l-19 55m149-56 18 49" stroke="#c9bda7" stroke-width="3" fill="none" opacity=".5"/>
+</svg>

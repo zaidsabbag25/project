@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="300 300 400 450" role="img" aria-labelledby="title desc"><title id="title">Close-up detail: Sand-colored linen sofa with walnut legs</title><desc id="desc">Cropped close-up of an original 3legant concept illustration for the demonstration catalog. This is a drawn placeholder, not a photograph of a product for sale.</desc><defs>
+ <linearGradient id="back" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f3efe8"/><stop offset="1" stop-color="#e4ddd2"/></linearGradient>
+ <linearGradient id="linen" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#e7ddcc"/><stop offset=".5" stop-color="#d3c4ad"/><stop offset="1" stop-color="#b6a58d"/></linearGradient>
+ <linearGradient id="forest" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#617568"/><stop offset=".55" stop-color="#3f5548"/><stop offset="1" stop-color="#2d4036"/></linearGradient>
+ <linearGradient id="wood" x1="0" y1="0" x2="1" y2=".6"><stop stop-color="#a17e59"/><stop offset=".45" stop-color="#c09a6d"/><stop offset="1" stop-color="#775739"/></linearGradient>
+ <linearGradient id="ceramic" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#aaa390"/><stop offset=".35" stop-color="#e3dccb"/><stop offset=".68" stop-color="#c7bfaa"/><stop offset="1" stop-color="#9c927d"/></linearGradient>
+ <linearGradient id="brass" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#806544"/><stop offset=".4" stop-color="#cbb17f"/><stop offset=".6" stop-color="#a4885d"/><stop offset="1" stop-color="#685237"/></linearGradient>
+ <radialGradient id="shade"><stop stop-color="#777065" stop-opacity=".28"/><stop offset="1" stop-color="#777065" stop-opacity="0"/></radialGradient>
+ <filter id="soft"><feGaussianBlur stdDeviation="9"/></filter>
+ <pattern id="weave" width="6" height="6" patternUnits="userSpaceOnUse"><path d="M0 0h6M0 3h6M0 0v6M3 0v6" stroke="#7a6c52" stroke-opacity=".06" stroke-width=".7"/></pattern>
+ </defs><path fill="url(#back)" d="M0 0h800v900H0z"/><ellipse cx="400" cy="730" rx="300" ry="75" fill="url(#shade)"/>
+ <ellipse cx="400" cy="724" rx="300" ry="26" fill="#958b78" opacity=".2" filter="url(#soft)"/>
+ <path d="m174 664-12 63h22l20-63M606 664l14 63h23l-9-63" fill="#654b34"/>
+ <rect x="123" y="353" width="554" height="278" rx="63" fill="#b9aa92"/>
+ <rect x="139" y="360" width="522" height="233" rx="52" fill="url(#linen)"/>
+ <path d="M400 375v189" fill="none" stroke="#a99b85" stroke-width="3"/>
+ <rect x="155" y="555" width="490" height="119" rx="28" fill="#b8a88f"/>
+ <rect x="151" y="541" width="246" height="80" rx="24" fill="url(#linen)"/>
+ <rect x="402" y="541" width="246" height="80" rx="24" fill="url(#linen)"/>
+ <rect x="102" y="465" width="89" height="202" rx="35" fill="url(#linen)"/>
+ <rect x="609" y="465" width="89" height="202" rx="35" fill="url(#linen)"/>
+ <path d="M127 482v148M673 482v148M169 647h460" stroke="#9b8d76" stroke-width="2" fill="none" opacity=".55"/>
+ <rect x="203" y="395" width="113" height="143" rx="24" fill="url(#forest)" transform="rotate(-9 259 466)"/>
+ <path d="m219 415 72 6m-76 27 74 6m-77 26 77 7" stroke="#c8cfc3" opacity=".15" stroke-width="3"/>
+ <rect x="507" y="397" width="105" height="140" rx="24" fill="#e7e0d3" transform="rotate(10 560 467)"/>
+ <path d="M170 380h462v160H170z" fill="url(#weave)" opacity=".6"/>
+</svg>
